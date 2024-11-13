@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "init_system",
+    "init_system_macro",
+    "init_sysytem_example",
+]
+
+default-members = ["init_sysytem_example"]
+
+[profile.release]
+opt-level = 3
+strip = true
+debug = false
+debug-assertions = false
+overflow-checks = true
+lto = true
+panic = 'unwind'
+incremental = true
+codegen-units = 16
+rpath = false
+
+[workspace.dependencies]

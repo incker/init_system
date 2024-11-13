@@ -1,0 +1,17 @@
+[package]
+name = "init_sysytem"
+version = "0.1.0"
+edition = "2021"
+description = "Framework to wrap application init"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/incker/init_sysytem"
+keywords = ["init"]
+categories = ["asynchronous"]
+
+[dependencies]
+tokio = { version = "1.41.1", features = [] }
+tokio-util = { version = "0.7.12", features = [] }
+init_system_macro = { version = "0.1", path = "../init_system_macro" }
+
+[lints.rust]
+unsafe_code = "forbid"

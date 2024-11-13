@@ -1,0 +1,19 @@
+[package]
+name = "init_system_macro"
+version = "0.1.0"
+edition = "2021"
+description = "Macros for pupactor"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/incker/init_sysytem"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.37"
+syn = {  version = "2.0.87", features = ["full"]}
+proc-macro2 = "1.0.89"
+indexmap = "2.6.0"
+
+[lints.rust]
+unsafe_code = "forbid"
